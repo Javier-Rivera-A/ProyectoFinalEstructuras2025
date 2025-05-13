@@ -51,7 +51,7 @@ public class CustomerFileRepository {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(dataFilePath))) {
             oos.writeObject(customers);
         } catch (IOException e) {
-            System.err.println("Error al guardar los datos: " + e.getMessage());
+
         }
     }
 
